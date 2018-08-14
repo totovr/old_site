@@ -1,0 +1,44 @@
+# Site settings
+title: Personal blog
+description: "In fact I like to write."
+url: totovr.github.io
+author:
+  name: "Antonio Vega"
+  email: "a.vegaramirez76@gmail.com"
+  url: "https://github.com/totovr/totovr.github.io"
+
+# Build settings
+baseurl: /totovr.github.io # Change this to your relative path (ex: /blog/), or leave just a /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+gems:
+  - jekyll-paginate
+
+# Custom variables
+version: "1.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
+
+#Media
+email: a.vegaramirez76@gmail.com
+twitter_username: SpainDice
+github_username:  totovr
+google_plus_username: +AntonioVegaAVR
